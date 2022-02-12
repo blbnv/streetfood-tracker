@@ -20,7 +20,7 @@
 		1B87115E27B80CDA00691431 /* FoodMapReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115D27B80CDA00691431 /* FoodMapReducer.swift */; };
 		1B87116027B80CFD00691431 /* FoodMapEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115F27B80CFD00691431 /* FoodMapEnvironment.swift */; };
 		1B87116927B81C8E00691431 /* FoodMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87116827B81C8E00691431 /* FoodMapView.swift */; };
-		1B87116B27B81CC200691431 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87116A27B81CC200691431 /* App.swift */; };
+		1B87116B27B81CC200691431 /* StreetFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87116A27B81CC200691431 /* StreetFoodApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,9 @@
 		1B87115D27B80CDA00691431 /* FoodMapReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapReducer.swift; sourceTree = "<group>"; };
 		1B87115F27B80CFD00691431 /* FoodMapEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapEnvironment.swift; sourceTree = "<group>"; };
 		1B87116827B81C8E00691431 /* FoodMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapView.swift; sourceTree = "<group>"; };
-		1B87116A27B81CC200691431 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		1B87116A27B81CC200691431 /* StreetFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetFoodApp.swift; sourceTree = "<group>"; };
+		1B87116C27B8207A00691431 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1B87116D27B8208300691431 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,7 @@
 		1B87112D27B801B100691431 /* streetfood-tracker */ = {
 			isa = PBXGroup;
 			children = (
-				1B87116A27B81CC200691431 /* App.swift */,
+				1B87116A27B81CC200691431 /* StreetFoodApp.swift */,
 				1B87114827B80A0400691431 /* Core */,
 				1B87115A27B80BEA00691431 /* Models */,
 				1B87114327B8052700691431 /* Resources */,
@@ -192,6 +194,8 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
+				ru,
 			);
 			mainGroup = 1B87112227B801B100691431;
 			packageReferences = (
@@ -246,7 +250,7 @@
 			files = (
 				1B87115927B80BCF00691431 /* FoodItem.swift in Sources */,
 				1B87116927B81C8E00691431 /* FoodMapView.swift in Sources */,
-				1B87116B27B81CC200691431 /* App.swift in Sources */,
+				1B87116B27B81CC200691431 /* StreetFoodApp.swift in Sources */,
 				1B87116027B80CFD00691431 /* FoodMapEnvironment.swift in Sources */,
 				1B87115327B80AB200691431 /* AppReducer.swift in Sources */,
 				1B87115127B80AA500691431 /* AppEnvironment.swift in Sources */,
@@ -265,6 +269,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1B87113A27B801B300691431 /* Base */,
+				1B87116C27B8207A00691431 /* uk */,
+				1B87116D27B8208300691431 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -337,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
