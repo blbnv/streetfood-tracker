@@ -1,5 +1,5 @@
 //
-//  AppAction.swift
+//  FoodMapAction.swift
 //  streetfood-tracker
 //
 //  Created by Oleksandr Balabanov on 12.02.2022.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum AppAction {
-    case foodMap(FoodMapAction)
+public enum FoodMapAction: Equatable {
+    case onAppear
 }
