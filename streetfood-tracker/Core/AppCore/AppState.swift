@@ -8,5 +8,5 @@
 import Foundation
 
 enum AppState {
-   case foodMap(FoodMapState)
+    case foodMap(FoodMapState)
 }
