@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B87113827B801B300691431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B87113727B801B300691431 /* Assets.xcassets */; };
-		1B87113B27B801B300691431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B87113927B801B300691431 /* LaunchScreen.storyboard */; };
 		1B87114B27B80A5D00691431 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1B87114A27B80A5D00691431 /* ComposableArchitecture */; };
 		1B87114D27B80A7D00691431 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87114C27B80A7D00691431 /* AppState.swift */; };
 		1B87114F27B80A9800691431 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87114E27B80A9800691431 /* AppAction.swift */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		1B87112B27B801B100691431 /* streetfood-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "streetfood-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B87113727B801B300691431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1B87113A27B801B300691431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B87113C27B801B300691431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B87114C27B80A7D00691431 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1B87114E27B80A9800691431 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -39,8 +37,6 @@
 		1B87115F27B80CFD00691431 /* FoodMapEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapEnvironment.swift; sourceTree = "<group>"; };
 		1B87116827B81C8E00691431 /* FoodMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapView.swift; sourceTree = "<group>"; };
 		1B87116A27B81CC200691431 /* StreetFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetFoodApp.swift; sourceTree = "<group>"; };
-		1B87116C27B8207A00691431 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		1B87116D27B8208300691431 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +82,6 @@
 		1B87114327B8052700691431 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1B87113927B801B300691431 /* LaunchScreen.storyboard */,
 				1B87113727B801B300691431 /* Assets.xcassets */,
 				1B87113C27B801B300691431 /* Info.plist */,
 			);
@@ -194,8 +189,6 @@
 			knownRegions = (
 				en,
 				Base,
-				uk,
-				ru,
 			);
 			mainGroup = 1B87112227B801B100691431;
 			packageReferences = (
@@ -215,7 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B87113B27B801B300691431 /* LaunchScreen.storyboard in Resources */,
 				1B87113827B801B300691431 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,19 +255,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1B87113927B801B300691431 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B87113A27B801B300691431 /* Base */,
-				1B87116C27B8207A00691431 /* uk */,
-				1B87116D27B8208300691431 /* ru */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1B87113D27B801B300691431 /* Debug */ = {
