@@ -13,8 +13,7 @@ let package = Package(
     products: [
         .library(name: "AppCore", targets: ["AppCore"]),
         .library(name: "FoodMapCore", targets: ["FoodMapCore"]),
-        .library(name: "FoodMapUI", targets: ["FoodMapUI"]),
-        .library(name: "LoggingService", targets: ["LoggingService"])
+        .library(name: "FoodMapUI", targets: ["FoodMapUI"])
     ],
     dependencies: [
         .package(
@@ -37,8 +36,7 @@ let package = Package(
                 dependencies: [
                     "FoodMapCore",
                     .product(name: "ComposableArchitecture",
-                             package: "swift-composable-architecture")]),
-        .target(name: "LoggingService", dependencies: [])
+                             package: "swift-composable-architecture")])
     ]
 )
 
