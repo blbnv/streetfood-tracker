@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B87112B27B801B100691431 /* streetfood-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "streetfood-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B87112B27B801B100691431 /* StreetFoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetFoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B87113727B801B300691431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B87113C27B801B300691431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B87114C27B80A7D00691431 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		1B87112227B801B100691431 = {
 			isa = PBXGroup;
 			children = (
-				1B87112D27B801B100691431 /* streetfood-tracker */,
+				1B87112D27B801B100691431 /* App */,
 				1B87112C27B801B100691431 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +62,12 @@
 		1B87112C27B801B100691431 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B87112B27B801B100691431 /* streetfood-tracker.app */,
+				1B87112B27B801B100691431 /* StreetFoodTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B87112D27B801B100691431 /* streetfood-tracker */ = {
+		1B87112D27B801B100691431 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				1B87116A27B81CC200691431 /* StreetFoodApp.swift */,
@@ -76,7 +76,7 @@
 				1B87114327B8052700691431 /* Resources */,
 				1B87114427B8069300691431 /* UI */,
 			);
-			path = "streetfood-tracker";
+			path = App;
 			sourceTree = "<group>";
 		};
 		1B87114327B8052700691431 /* Resources */ = {
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B87112A27B801B100691431 /* streetfood-tracker */ = {
+		1B87112A27B801B100691431 /* StreetFoodTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B87113F27B801B300691431 /* Build configuration list for PBXNativeTarget "streetfood-tracker" */;
+			buildConfigurationList = 1B87113F27B801B300691431 /* Build configuration list for PBXNativeTarget "StreetFoodTracker" */;
 			buildPhases = (
 				1B87114227B802E800691431 /* Swiftlint */,
 				1B87112727B801B100691431 /* Sources */,
@@ -159,12 +159,12 @@
 			);
 			dependencies = (
 			);
-			name = "streetfood-tracker";
+			name = StreetFoodTracker;
 			packageProductDependencies = (
 				1B87114A27B80A5D00691431 /* ComposableArchitecture */,
 			);
 			productName = "streetfood-tracker";
-			productReference = 1B87112B27B801B100691431 /* streetfood-tracker.app */;
+			productReference = 1B87112B27B801B100691431 /* StreetFoodTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B87112627B801B100691431 /* Build configuration list for PBXProject "streetfood-tracker" */;
+			buildConfigurationList = 1B87112627B801B100691431 /* Build configuration list for PBXProject "StreetFoodTracker" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -198,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B87112A27B801B100691431 /* streetfood-tracker */,
+				1B87112A27B801B100691431 /* StreetFoodTracker */,
 			);
 		};
 /* End PBXProject section */
@@ -384,7 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95RD7T8BV7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "streetfood-tracker/Resources/Info.plist";
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -411,7 +411,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95RD7T8BV7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "streetfood-tracker/Resources/Info.plist";
+				INFOPLIST_FILE = App/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -432,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B87112627B801B100691431 /* Build configuration list for PBXProject "streetfood-tracker" */ = {
+		1B87112627B801B100691431 /* Build configuration list for PBXProject "StreetFoodTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B87113D27B801B300691431 /* Debug */,
@@ -441,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B87113F27B801B300691431 /* Build configuration list for PBXNativeTarget "streetfood-tracker" */ = {
+		1B87113F27B801B300691431 /* Build configuration list for PBXNativeTarget "StreetFoodTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B87114027B801B300691431 /* Debug */,
