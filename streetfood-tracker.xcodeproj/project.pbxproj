@@ -10,6 +10,7 @@
 		1B87112F27B801B100691431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87112E27B801B100691431 /* AppDelegate.swift */; };
 		1B87113827B801B300691431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B87113727B801B300691431 /* Assets.xcassets */; };
 		1B87113B27B801B300691431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B87113927B801B300691431 /* LaunchScreen.storyboard */; };
+		1B87114727B806B800691431 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87114627B806B800691431 /* FoodMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		1B87113727B801B300691431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B87113A27B801B300691431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B87113C27B801B300691431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B87114627B806B800691431 /* FoodMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		1B87112D27B801B100691431 /* streetfood-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				1B87114427B8069300691431 /* UI */,
 				1B87114327B8052700691431 /* Resources */,
 				1B87112E27B801B100691431 /* AppDelegate.swift */,
 			);
@@ -64,6 +67,22 @@
 				1B87113C27B801B300691431 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B87114427B8069300691431 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B87114527B8069E00691431 /* FoodMap */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1B87114527B8069E00691431 /* FoodMap */ = {
+			isa = PBXGroup;
+			children = (
+				1B87114627B806B800691431 /* FoodMapViewController.swift */,
+			);
+			path = FoodMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B87112F27B801B100691431 /* AppDelegate.swift in Sources */,
+				1B87114727B806B800691431 /* FoodMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +324,6 @@
 				INFOPLIST_FILE = "streetfood-tracker/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,7 +335,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +351,6 @@
 				INFOPLIST_FILE = "streetfood-tracker/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,7 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
