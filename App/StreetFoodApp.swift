@@ -5,17 +5,15 @@
 //  Created by Oleksandr Balabanov on 12.02.2022.
 //
 
-import ComposableArchitecture
+import AppCore
+import FoodMapUI
 import SwiftUI
 
 @main
 struct StreetFoodApp: App {
-    let store = Store<AppState, AppAction>(initialState: .defaultState(),
-                                           reducer: appReducer,
-                                           environment: AppEnvironment())
     var body: some Scene {
         WindowGroup {
-            FoodMapView(store: self.store.scope(state: \.foodMap, action: AppAction.foodMap))
+            FoodMapView(store: appStore.scope(state: \.foodMap, action: AppAction.foodMap))
         }
     }
 }

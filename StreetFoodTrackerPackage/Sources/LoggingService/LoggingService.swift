@@ -9,6 +9,6 @@ import Foundation
 
 public final class LoggingService {
     public static func log(_ message: String) {
-        os_log("something")
+        print(message)
     }
 }

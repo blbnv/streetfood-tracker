@@ -1,5 +1,5 @@
-import XCTest
 @testable import StreetFoodTrackerPackage
+import XCTest
 
 final class StreetFoodTrackerPackageTests: XCTestCase {
     func testExample() throws {

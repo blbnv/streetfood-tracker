@@ -7,15 +7,15 @@
 
 import Foundation
 
-enum FoodMapState: Equatable {
+public enum FoodMapState: Equatable {
     case idle
     case loading
     case loaded(items: [FoodItem])
     case failed
 }
 
-extension FoodMapState {
-    static func defaultState() -> Self {
+public extension FoodMapState {
+    static func defaultState() -> FoodMapState {
         return .idle
     }
 }

@@ -7,4 +7,6 @@
 
 import Foundation
 
-struct FoodMapEnvironment {}
+public struct FoodMapEnvironment {
+    public init() { }
+}
