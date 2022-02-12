@@ -1,3 +1,3 @@
 # StreetFoodTrackerPackage
 
-A description of this package.
+Independent modules for the applicaiton
