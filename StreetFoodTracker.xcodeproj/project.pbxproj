@@ -37,6 +37,7 @@
 		1B87115F27B80CFD00691431 /* FoodMapEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapEnvironment.swift; sourceTree = "<group>"; };
 		1B87116827B81C8E00691431 /* FoodMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapView.swift; sourceTree = "<group>"; };
 		1B87116A27B81CC200691431 /* StreetFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetFoodApp.swift; sourceTree = "<group>"; };
+		1B98A6EA27B8419B00DDC02C /* StreetFoodTrackerPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = StreetFoodTrackerPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		1B87112227B801B100691431 = {
 			isa = PBXGroup;
 			children = (
+				1B98A6EA27B8419B00DDC02C /* StreetFoodTrackerPackage */,
 				1B87112D27B801B100691431 /* App */,
 				1B87112C27B801B100691431 /* Products */,
 			);
