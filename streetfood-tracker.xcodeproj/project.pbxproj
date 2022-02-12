@@ -11,6 +11,16 @@
 		1B87113827B801B300691431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B87113727B801B300691431 /* Assets.xcassets */; };
 		1B87113B27B801B300691431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B87113927B801B300691431 /* LaunchScreen.storyboard */; };
 		1B87114727B806B800691431 /* FoodMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87114627B806B800691431 /* FoodMapViewController.swift */; };
+		1B87114B27B80A5D00691431 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1B87114A27B80A5D00691431 /* ComposableArchitecture */; };
+		1B87114D27B80A7D00691431 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87114C27B80A7D00691431 /* AppState.swift */; };
+		1B87114F27B80A9800691431 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87114E27B80A9800691431 /* AppAction.swift */; };
+		1B87115127B80AA500691431 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115027B80AA500691431 /* AppEnvironment.swift */; };
+		1B87115327B80AB200691431 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115227B80AB200691431 /* AppReducer.swift */; };
+		1B87115727B80B2500691431 /* FoodMapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115627B80B2500691431 /* FoodMapState.swift */; };
+		1B87115927B80BCF00691431 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115827B80BCF00691431 /* FoodItem.swift */; };
+		1B87115C27B80C6C00691431 /* FoodMapAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115B27B80C6C00691431 /* FoodMapAction.swift */; };
+		1B87115E27B80CDA00691431 /* FoodMapReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115D27B80CDA00691431 /* FoodMapReducer.swift */; };
+		1B87116027B80CFD00691431 /* FoodMapEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87115F27B80CFD00691431 /* FoodMapEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,15 @@
 		1B87113A27B801B300691431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B87113C27B801B300691431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B87114627B806B800691431 /* FoodMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapViewController.swift; sourceTree = "<group>"; };
+		1B87114C27B80A7D00691431 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1B87114E27B80A9800691431 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		1B87115027B80AA500691431 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		1B87115227B80AB200691431 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		1B87115627B80B2500691431 /* FoodMapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapState.swift; sourceTree = "<group>"; };
+		1B87115827B80BCF00691431 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		1B87115B27B80C6C00691431 /* FoodMapAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapAction.swift; sourceTree = "<group>"; };
+		1B87115D27B80CDA00691431 /* FoodMapReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapReducer.swift; sourceTree = "<group>"; };
+		1B87115F27B80CFD00691431 /* FoodMapEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B87114B27B80A5D00691431 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +72,11 @@
 		1B87112D27B801B100691431 /* streetfood-tracker */ = {
 			isa = PBXGroup;
 			children = (
-				1B87114427B8069300691431 /* UI */,
-				1B87114327B8052700691431 /* Resources */,
 				1B87112E27B801B100691431 /* AppDelegate.swift */,
+				1B87114827B80A0400691431 /* Core */,
+				1B87115A27B80BEA00691431 /* Models */,
+				1B87114327B8052700691431 /* Resources */,
+				1B87114427B8069300691431 /* UI */,
 			);
 			path = "streetfood-tracker";
 			sourceTree = "<group>";
@@ -85,6 +107,45 @@
 			path = FoodMap;
 			sourceTree = "<group>";
 		};
+		1B87114827B80A0400691431 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1B87115427B80AE900691431 /* AppCore */,
+				1B87115527B80AF300691431 /* FoodMapCore */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1B87115427B80AE900691431 /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				1B87114C27B80A7D00691431 /* AppState.swift */,
+				1B87114E27B80A9800691431 /* AppAction.swift */,
+				1B87115027B80AA500691431 /* AppEnvironment.swift */,
+				1B87115227B80AB200691431 /* AppReducer.swift */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		1B87115527B80AF300691431 /* FoodMapCore */ = {
+			isa = PBXGroup;
+			children = (
+				1B87115627B80B2500691431 /* FoodMapState.swift */,
+				1B87115B27B80C6C00691431 /* FoodMapAction.swift */,
+				1B87115F27B80CFD00691431 /* FoodMapEnvironment.swift */,
+				1B87115D27B80CDA00691431 /* FoodMapReducer.swift */,
+			);
+			path = FoodMapCore;
+			sourceTree = "<group>";
+		};
+		1B87115A27B80BEA00691431 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B87115827B80BCF00691431 /* FoodItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +163,9 @@
 			dependencies = (
 			);
 			name = "streetfood-tracker";
+			packageProductDependencies = (
+				1B87114A27B80A5D00691431 /* ComposableArchitecture */,
+			);
 			productName = "streetfood-tracker";
 			productReference = 1B87112B27B801B100691431 /* streetfood-tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +194,9 @@
 				Base,
 			);
 			mainGroup = 1B87112227B801B100691431;
+			packageReferences = (
+				1B87114927B80A5D00691431 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 1B87112C27B801B100691431 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,8 +244,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B87115927B80BCF00691431 /* FoodItem.swift in Sources */,
+				1B87116027B80CFD00691431 /* FoodMapEnvironment.swift in Sources */,
+				1B87115327B80AB200691431 /* AppReducer.swift in Sources */,
+				1B87115127B80AA500691431 /* AppEnvironment.swift in Sources */,
+				1B87114D27B80A7D00691431 /* AppState.swift in Sources */,
+				1B87114F27B80A9800691431 /* AppAction.swift in Sources */,
+				1B87115E27B80CDA00691431 /* FoodMapReducer.swift in Sources */,
 				1B87112F27B801B100691431 /* AppDelegate.swift in Sources */,
 				1B87114727B806B800691431 /* FoodMapViewController.swift in Sources */,
+				1B87115C27B80C6C00691431 /* FoodMapAction.swift in Sources */,
+				1B87115727B80B2500691431 /* FoodMapState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +464,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B87114927B80A5D00691431 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B87114A27B80A5D00691431 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B87114927B80A5D00691431 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B87112327B801B100691431 /* Project object */;
 }
