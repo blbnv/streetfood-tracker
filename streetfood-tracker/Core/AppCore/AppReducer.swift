@@ -8,7 +8,7 @@
 import ComposableArchitecture
 
 let appReducer = Reducer<AppState, AppAction, AppEnvironment>.combine(
-    foodMapReducer.pullback(state: /AppState.foodMap,
+    foodMapReducer.pullback(state: \.foodMap,
                             action: /AppAction.foodMap,
                             environment: { _ in FoodMapEnvironment() })
 )

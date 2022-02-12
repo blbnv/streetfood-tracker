@@ -5,18 +5,21 @@
 //  Created by Oleksandr Balabanov on 12.02.2022.
 //
 
+import ComposableArchitecture
 import MapKit
 import SwiftUI
 
 struct FoodMapView: View {
-    var body: some View {
-        Map(mapRect: .constant(.world))
-            .ignoresSafeArea()
-    }
-}
+    private let store: Store<FoodMapState, FoodMapAction>
 
-struct FoodMapViewPreview: PreviewProvider {
-    static var previews: some View {
-        FoodMapView()
+    init(store: Store<FoodMapState, FoodMapAction>) {
+        self.store = store
+    }
+
+    var body: some View {
+        WithViewStore(self.store) { _ in
+            Map(mapRect: .constant(.world))
+                .ignoresSafeArea()
+        }
     }
 }

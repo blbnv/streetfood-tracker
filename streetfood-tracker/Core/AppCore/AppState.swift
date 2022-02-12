@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum AppState {
-    case foodMap(FoodMapState)
+struct AppState {
+    var foodMap = FoodMapState.idle
 }
