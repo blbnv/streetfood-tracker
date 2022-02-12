@@ -8,5 +8,11 @@
 import Foundation
 
 struct AppState {
-    var foodMap = FoodMapState.idle
+    var foodMap: FoodMapState
+}
+
+extension AppState {
+    static func defaultState() -> Self {
+        return .init(foodMap: .defaultState())
+    }
 }

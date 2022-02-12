@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct StreetFoodApp: App {
-    let store = Store<AppState, AppAction>(initialState: .init(),
+    let store = Store<AppState, AppAction>(initialState: .defaultState(),
                                            reducer: appReducer,
                                            environment: AppEnvironment())
     var body: some Scene {
