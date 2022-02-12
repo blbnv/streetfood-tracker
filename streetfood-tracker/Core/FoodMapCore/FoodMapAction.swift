@@ -7,4 +7,6 @@
 
 import Foundation
 
-enum FoodMapAction: Equatable {}
+enum FoodMapAction: Equatable {
+    case onAppear
+}

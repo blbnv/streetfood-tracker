@@ -13,3 +13,9 @@ enum FoodMapState: Equatable {
     case loaded(items: [FoodItem])
     case failed
 }
+
+extension FoodMapState {
+    static func defaultState() -> Self {
+        return .idle
+    }
+}

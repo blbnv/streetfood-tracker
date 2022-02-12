@@ -17,9 +17,10 @@ struct FoodMapView: View {
     }
 
     var body: some View {
-        WithViewStore(self.store) { _ in
+        WithViewStore(self.store) { viewStore in
             Map(mapRect: .constant(.world))
                 .ignoresSafeArea()
+                .onAppear(perform: { viewStore.send(.onAppear) })
         }
     }
 }

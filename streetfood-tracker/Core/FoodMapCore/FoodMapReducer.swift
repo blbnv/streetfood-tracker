@@ -7,6 +7,10 @@
 
 import ComposableArchitecture
 
-let foodMapReducer = Reducer<FoodMapState, FoodMapAction, FoodMapEnvironment> { _, _, _ in
-        .none
+let foodMapReducer = Reducer<FoodMapState, FoodMapAction, FoodMapEnvironment> { state, action, _ in
+    switch action {
+    case .onAppear:
+        state = .loading
+        return .none
+    }
 }
