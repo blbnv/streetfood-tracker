@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct FoodItem: Equatable {
+public struct FoodItem: Equatable, Identifiable {
     public let id: String = UUID().uuidString
     public let name: String
     public let location: LocationInfo
