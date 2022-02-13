@@ -7,10 +7,18 @@
 
 import ComposableArchitecture
 
-public let foodMapReducer = Reducer<FoodMapState, FoodMapAction, FoodMapEnvironment> { state, action, _ in
+public let foodMapReducer = Reducer<FoodMapState, FoodMapAction, FoodMapEnvironment> { state, action, environment in
     switch action {
+    case .fetchResponse(let result):
+        switch result {
+        case .success(let items): state = .loaded(items: items)
+        case .failure: state = .failed
+        }
+        return .none
     case .onAppear:
         state = .loading
-        return .none
+        return environment.foodFetchingService
+            .fetch()
+            .catchToEffect(FoodMapAction.fetchResponse)
     }
 }

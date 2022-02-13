@@ -5,6 +5,7 @@
 //  Created by Oleksandr Balabanov on 12.02.2022.
 //
 
+import FoodFetchingService
 import Foundation
 
 public enum FoodMapState: Equatable {

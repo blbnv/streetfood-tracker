@@ -13,11 +13,11 @@ let package = Package(
     products: [
         .library(name: "AppCore", targets: ["AppCore"]),
         .library(name: "FoodMapCore", targets: ["FoodMapCore"]),
-        .library(name: "FoodMapUI", targets: ["FoodMapUI"])
+        .library(name: "FoodMapUI", targets: ["FoodMapUI"]),
+        .library(name: "FoodFetchingService", targets: ["FoodFetchingService"])
     ],
     dependencies: [
         .package(
-            name: "swift-composable-architecture",
             url: "https://github.com/pointfreeco/swift-composable-architecture",
             from: .init(stringLiteral: "0.33.1"))
     ],
@@ -31,12 +31,18 @@ let package = Package(
         .target(name: "FoodMapCore",
                 dependencies: [
                     .product(name: "ComposableArchitecture",
-                             package: "swift-composable-architecture")]),
+                             package: "swift-composable-architecture"),
+                    "FoodFetchingService"]),
         .target(name: "FoodMapUI",
                 dependencies: [
                     "FoodMapCore",
                     .product(name: "ComposableArchitecture",
-                             package: "swift-composable-architecture")])
+                             package: "swift-composable-architecture")]),
+        .target(name: "FoodFetchingService",
+                dependencies: [
+                    .product(name: "ComposableArchitecture",
+                             package: "swift-composable-architecture")
+                ])
     ]
 )
 
