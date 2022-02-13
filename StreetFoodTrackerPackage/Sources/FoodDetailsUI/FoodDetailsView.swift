@@ -9,6 +9,6 @@ import SwiftUI
 
 public struct FoodDetailsView: View {
     var body: View {
-        Text("Еуые")
+        Text("Test")
     }
 }
