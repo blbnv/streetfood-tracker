@@ -27,7 +27,14 @@ public struct FoodMapView: View {
             Map(coordinateRegion: $region,
                 annotationItems: viewStore.state.items,
                 annotationContent: { item in
-                MapPin(coordinate: item.location.coordinates)
+                MapAnnotation(coordinate: item.location.coordinates) {
+                    Image(systemName: "fork.knife.circle.fill")
+                        .font(.title)
+                        .foregroundColor(.orange)
+                        .onTapGesture {
+
+                        }
+                }
             })
                 .ignoresSafeArea()
                 .onAppear(perform: { viewStore.send(.onAppear) })
