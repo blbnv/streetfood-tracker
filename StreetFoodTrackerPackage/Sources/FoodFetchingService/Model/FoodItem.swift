@@ -8,5 +8,5 @@
 import Foundation
 
 public struct FoodItem: Equatable {
-    let id: String = UUID().uuidString
+    public let id: String = UUID().uuidString
 }
